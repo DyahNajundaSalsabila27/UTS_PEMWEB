@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Setelan Rample Jogger Hazwa</title>
+</head>
+<body  style="margin: 100px">
+	<center>
+	<h2> Setelan Rample Jogger Hazwa </h2>
+
+	
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="C:\Users\USER\Pictures\2101_insertion\logo.jpg">PILIH MOTIF</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\hazwa blue.jpg">Set Rample Jogger Hazwa Blue</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\hazwa dusty.jpg">Set Rample Jogger Hazwa Dusty</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\hazwa fanta.jpg">Set Rample Jogger Hazwa Fanta</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\hazwa grey.jpg">Set Rample Jogger Hazwa Grey</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\hazwa mustard.jpg">Set Rample Jogger Hazwa Mustard </option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\hazwa pink.jpg">Set Rample Jogger Hazwa Pink</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\hazwa purple.jpg">Set Rample Jogger Hazwa Purple </option>
+		</select>
+	</center>
+		<br/>
+	<img src=C:\Users\USER\Pictures\2101_insertion\logo.jpg style="width: 70%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>

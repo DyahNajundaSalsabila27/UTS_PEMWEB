@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vitto Kidswear Sweater</title>
+</head>
+<body  style="margin: 100px">
+	<center>
+	<h2> Vitto Kidswear Sweater</h2>
+
+	
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="C:\Users\USER\Pictures\2101_insertion\logo.jpg">PILIH MOTIF</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\Vitto Kidswear Sweater Fanta.jpg">Vitto Kidswear Sweater Fanta</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\Vitto Kidswear Sweater gREY.jpg">Vitto Kidswear Sweater Grey</option>
+			<option value="CC:\Users\USER\Pictures\2101_insertion\Vitto Kidswear Sweater Mustard.jpg">Vitto Kidswear Sweater Mustard</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\Vitto Kidswear Sweater Pink.jpg">Vitto Kidswear Sweater Pink.jpg</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\Vitto Kidswear Sweater Purple.jpg">Vitto Kidswear Sweater Purple </option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\Vitto Kidswear Sweater Red.jpg">Vitto Kidswear Sweater Red</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\Vitto Kidswear Sweater Tosca.jpg">Vitto Kidswear Sweater Tosca </option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\Vitto Kidswear Sweater Yellow.jpg">Vitto Kidswear Sweater Yellow</option>
+		</select>
+	</center>
+		<br/>
+	<img src=C:\Users\USER\Pictures\2101_insertion\logo.jpg style="width: 70%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>

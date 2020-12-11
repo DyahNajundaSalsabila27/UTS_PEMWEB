@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Crewneck & Sport Longskirt </title>
+</head>
+<body  style="margin: 100px">
+	<center>
+	<h2> Crewneck & Sport Longskirt </h2>
+
+	
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="C:\Users\USER\Pictures\2101_insertion\logo.jpg">PILIH MOTIF</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\Crewneck & Sport Longskirt blue.jpg">Crewneck & Sport Longskirt Blue</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\Crewneck & Sport Longskirt pink.jpg">Crewneck & Sport Longskirt Pink</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\Crewneck & Sport Longskirt purple.jpg">Crewneck & Sport Longskirt Purple</option>
+		</select>
+	</center>
+		<br/>
+	<img src=C:\Users\USER\Pictures\2101_insertion\logo.jpg style="width: 70%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>One Set Rample Farah</title>
+</head>
+<body  style="margin: 100px">
+	<center>
+	<h2> One Set Rample Farah </h2>
+
+	
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="C:\Users\USER\Pictures\2101_insertion\logo.jpg">PILIH MOTIF</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\One Set Rample Farah Dusty Pink.jpg">One Set Rample Farah Dusty Pink</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\One Set Rample Farah Mustard.jpg">One Set Rample Farah Mustard</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\One Set Rample Farah Navy.jpg">One Set Rample Farah Navy</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\One Set Rample Farah Pink.jpg">One Set Rample Farah Pink</option>
+			
+		</select>
+	</center>
+		<br/>
+	<img src=C:\Users\USER\Pictures\2101_insertion\logo.jpg style="width: 100%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>

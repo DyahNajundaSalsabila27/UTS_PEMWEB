@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>T-Shirt Baby 3 in 1</title>
+</head>
+<body  style="margin: 100px">
+	<center>
+	<h2> T-Shirt Baby 3 in 1 </h2>
+
+	
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="C:\Users\USER\Pictures\2101_insertion\logo.jpg">Pilih Motif</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\tshirt baby bata.jpg">T-Shirt Baby 3 in 1 Bata</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\tshirt baby biru.jpg">T-Shirt Baby 3 in 1 Biru Muda </option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\tshirt baby hitam.jpg">T-Shirt Baby 3 in 1 Hitam </option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\tshirt baby navy.jpg">T-Shirt Baby 3 in 1 Navy </option>
+		</select>
+	</center>
+		<br/>
+	<img src=C:\Users\USER\Pictures\2101_insertion\logo.jpg style="width: 70%" id="gambar">
+
+</body>
+</html>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>

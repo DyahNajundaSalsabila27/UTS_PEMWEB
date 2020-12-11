@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kemeja Blooms.id</title>
+</head>
+<body  style="margin: 100px">
+	<center>
+	<h2> Kemeja Blooms.id </h2>
+
+	
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="C:\Users\USER\Pictures\2101_insertion\logo.jpg">PILIH MOTIF</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\bloomsid blue.jpg">Kemeja Blooms.id Blue </option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\bloomsid chocolate.jpg">Kemeja Blooms.id Chocolate</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\bloomsid green.jpg">Kemeja Blooms.id Green</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\Bloomsid mustard.jpg">Kemeja Blooms.id Mustard</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\bloomsid red.jpg">Kemeja Blooms.id Red</option>
+			
+		</select>
+	</center>
+		<br/>
+	<img src=C:\Users\USER\Pictures\2101_insertion\logo.jpg style="width: 70%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>

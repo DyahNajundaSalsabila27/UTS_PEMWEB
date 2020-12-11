@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BabeBee Cute Outfit</title>
+</head>
+<body  style="margin: 100px">
+	<center>
+	<h2> BabeBee Cute Outfit </h2>
+
+	
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="C:\Users\USER\Pictures\2101_insertion\logo.jpg">PILIH MOTIF</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\babebee 1.jpg">Babebee Girl Green</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\babebee2.jpg">Babebee Girl Orange</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\babebee3.jpg">Babebee Girl Fanta</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\babebee 4.jpg">Babebee Girl Fanta</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\babe5.jpg">Babebee Boy Blue </option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\babebee 6.jpg">Babebee Boy Grey</option>
+			
+		</select>
+	</center>
+		<br/>
+	<img src=C:\Users\USER\Pictures\2101_insertion\logo.jpg style="width: 100%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>

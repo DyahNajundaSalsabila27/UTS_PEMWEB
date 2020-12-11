@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>One Set Rample Dirzha</title>
+</head>
+<body  style="margin: 100px">
+	<center>
+	<h2> One Set Rample Dirzha </h2>
+
+	
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="C:\Users\USER\Pictures\2101_insertion\logo.jpg">PILIH MOTIF</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\One Set Dirzha Blue.jpg">One Set Dirzha Blue</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\One Set Dirzha Cream.jpg">One Set Dirzha Cream</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\One Set Dirzha Dusty Pink.jpg">One Set Dirzha Dusty Pink</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\One Set Dirzha Orange.jpg">One Set Dirzha Orange</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\One Set Dirzha Purple.jpg">One Set Dirzha Purple</option>
+			<option value="C:\Users\USER\Pictures\2101_insertion\One Set Dirzha Yellow.jpg">One Set Dirzha Yellow</option>
+			
+		</select>
+	</center>
+		<br/>
+	<img src=C:\Users\USER\Pictures\2101_insertion\logo.jpg style="width: 70%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;
+		alert("Ini Gambar " + gambar);
+	}
+</script>
+</html>
